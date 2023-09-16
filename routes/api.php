@@ -19,4 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::apiResource('/catalogs','CatalogController');
 Route::get('/list',ListController::class);
 Route::get('/tree',TreeController::class);
-
+Route::get('/show',ShowController::class);
+Route::get('/show/{id}',ShowPartController::class);
